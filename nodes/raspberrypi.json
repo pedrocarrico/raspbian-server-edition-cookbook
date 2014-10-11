@@ -1,0 +1,9 @@
+{
+  "set_fqdn": "servernewhostname"
+  "run_list": [
+    "role[server_pi]"
+  ],
+  "automatic": {
+    "ipaddress": "raspberrypi"
+  }
+}

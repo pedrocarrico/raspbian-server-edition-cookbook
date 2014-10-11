@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+  customize:
+    cpus: 1
+    memory: 256
+
+provisioner:
+  name: chef_solo
+  solo_rb:
+    ssl_verify_mode: verify_peer
+
+platforms:
+  - name: ubuntu-14.04-i386
+
+suites:
+  - name: serverpi
+    run_list: ['role[server_pi]']

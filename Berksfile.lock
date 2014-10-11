@@ -1,0 +1,11 @@
+DEPENDENCIES
+  hostname (~> 0.3.0)
+  server_pi
+    path: cookbooks/server_pi
+
+GRAPH
+  hostname (0.3.0)
+    hostsfile (>= 0.0.0)
+  hostsfile (2.4.5)
+  server_pi (0.1.0)
+    hostname (>= 0.0.0)
