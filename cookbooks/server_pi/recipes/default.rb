@@ -1,9 +1,9 @@
-include_recipe "hostname::default"
+include_recipe 'hostname::default'
 
-#http://blog.pedrocarrico.net/post/90383758203/strip-down-raspbian-to-a-bare-minimum
-bash "remove_raspbian_packages" do
-  user "root"
-  cwd "/tmp"
+# http://blog.pedrocarrico.net/post/90383758203/strip-down-raspbian-to-a-bare-minimum
+bash 'remove_raspbian_packages' do
+  user 'root'
+  cwd '/tmp'
   code <<-EOH
   apt-get update
   apt-get purge xserver* -y
@@ -20,6 +20,6 @@ bash "remove_raspbian_packages" do
   EOH
 end
 
-package "tmux" do
+package 'tmux' do
   action :install
 end
