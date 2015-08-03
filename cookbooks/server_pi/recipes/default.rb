@@ -14,6 +14,16 @@ bash 'remove_raspbian_packages' do
   apt-get purge supercollider* -y
   apt-get purge netsurf* -y
   apt-get purge omxplayer -y
+  apt-get purge ^epiphany-browser -y
+  apt-get purge sonic-pi -y
+  apt-get purge wolfram-engine -y
+  apt-get purge scratch -y
+  apt-get purge penguinspuzzle -y
+  apt-get purge desktop-base -y
+  apt-get purge lightdm -y
+  apt-get purge obconf -y
+  apt-get purge openbox -y
+  apt-get purge raspberrypi-artwork -y
   apt-get autoremove -y
   apt-get upgrade -y
   apt-get clean
