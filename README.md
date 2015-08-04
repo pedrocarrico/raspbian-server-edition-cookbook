@@ -2,7 +2,7 @@
 
 This is my attempt to have a proper Raspbian server edition using chef.
 Currently it sets the hostname and removes some uneeded/unwanted packages that come pre-installed in the vanilla raspbian install.
-Works at least with the latest raspbian (as of 2014-09-09).
+Works at least with the latest raspbian (as of 2015-05-05) older versions may work also.
 
 ## Getting started
 
