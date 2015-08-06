@@ -30,6 +30,10 @@ bash 'remove_raspbian_packages' do
   EOH
 end
 
+package 'avahi-daemon' do
+  action :install
+end
+
 package 'tmux' do
   action :install
 end
